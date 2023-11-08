@@ -1,0 +1,24 @@
+{
+  "testNullOnlyInBMismatch": null,
+  "testNullEqualityMismatch": "abc",
+  "testStringOnlyInBMismatch": "testStringOnlyInBMismatch",
+  "testStringEqualityMismatch": "stringB",
+  "testIntegerOnlyInBMismatch": 1,
+  "testIntegerEqualityMismatch": 2,
+  "testDoubleOnlyInBMismatch": 3.14,
+  "testDoubleEqualityMismatch": 2.78,
+  "testBooleanOnlyInBMismatch": true,
+  "testBooleanEqualityMismatch": false,
+  "testArrayOnlyInBMismatch": [1,2,3],
+  "testArraySizeMismatch": [1,2],
+  "testArrayEqualityMismatch": [1,2,3,4],
+  "testArrayObjectMismatch": [{
+    "testMismatchedArrayObject": "testMismatchedArrayObjectB"
+  }],
+  "testObjectOnlyInBMismatch": {
+    "testMismatchedObject": "testMismatchedObject"
+  },
+  "testObjectEqualityMismatch": {
+    "testMismatchedObject": "testMismatchedObjectB"
+  }
+}

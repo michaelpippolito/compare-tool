@@ -1,0 +1,38 @@
+{
+  "testNull": null,
+  "testString": "testString",
+  "testInteger": 7,
+  "testDouble": 3.14,
+  "testBoolean": true,
+  "testArray": [1,2,3],
+  "testMixedArray": [
+    1, 3.14, "5", false, null,
+    {
+      "testArrayNestedNull": null,
+      "testArrayNestedString": "testArrayNestedString",
+      "testArrayNestedInteger": 1,
+      "testArrayNestedDouble": 3.14,
+      "testArrayNestedBoolean": true,
+      "testArrayNestedArray": [1,2,3],
+      "testArrayNestedMixedArray": [1, 3.14, "5", false, null]
+    }
+  ],
+  "testObject": {
+    "testObjectNull": null,
+    "testObjectString": "testObjectString",
+    "testObjectInteger": 7,
+    "testObjectDouble": 3.14,
+    "testObjectBoolean": true,
+    "testObjectArray": [1,2,3],
+    "testObjectMixedArray": [1, 3.14, "5", false, null],
+    "testNestedObject": {
+      "testNestedNull": null,
+      "testNestedString": "testNestedString",
+      "testNestedInteger": 7,
+      "testNestedDouble": 3.14,
+      "testNestedBoolean": true,
+      "testNestedArray": [1,2,3],
+      "testNestedMixedArray": [1, 3.14, "5", false, null]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "testNullOnlyInAMismatch": null,
+  "testNullEqualityMismatch": null,
+  "testStringOnlyInAMismatch": "testStringOnlyInAMismatch",
+  "testStringEqualityMismatch": "stringA",
+  "testIntegerOnlyInAMismatch": 1,
+  "testIntegerEqualityMismatch": 1,
+  "testDoubleOnlyInAMismatch": 3.14,
+  "testDoubleEqualityMismatch": 3.14,
+  "testBooleanOnlyInAMismatch": true,
+  "testBooleanEqualityMismatch": true,
+  "testArrayOnlyInAMismatch": [1,2,3],
+  "testArraySizeMismatch": [1,2,3],
+  "testArrayEqualityMismatch": [1,2,3],
+  "testArrayObjectMismatch": [{
+    "testMismatchedArrayObject": "testMismatchedArrayObjectA"
+  }],
+  "testObjectOnlyInAMismatch": {
+    "testMismatchedObject": "testMismatchedObject"
+  },
+  "testObjectEqualityMismatch": {
+    "testMismatchedObject": "testMismatchedObjectA"
+  }
+}
