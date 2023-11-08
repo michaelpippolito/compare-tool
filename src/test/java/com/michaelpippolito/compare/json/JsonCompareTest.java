@@ -4,17 +4,17 @@ import com.michaelpippolito.compare.common.CompareResult;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class JsonCompareTest {
     @Test
     public void testEquals() throws IOException {
-        FileInputStream streamA = new FileInputStream(new File(getClass().getClassLoader().getResource("equals.json").getFile()));
-        FileInputStream streamB = new FileInputStream(new File(getClass().getClassLoader().getResource("equals.json").getFile()));
+        FileInputStream streamA = new FileInputStream(Objects.requireNonNull(getClass().getClassLoader().getResource("equals.json")).getFile());
+        FileInputStream streamB = new FileInputStream(Objects.requireNonNull(getClass().getClassLoader().getResource("equals.json")).getFile());
 
         CompareResult compareResult = new JsonCompare(streamA, streamB).compare();
 
@@ -75,8 +75,8 @@ public class JsonCompareTest {
 
     @Test
     public void testMismatch() throws IOException {
-        FileInputStream streamA = new FileInputStream(new File(getClass().getClassLoader().getResource("testA.json").getFile()));
-        FileInputStream streamB = new FileInputStream(new File(getClass().getClassLoader().getResource("testB.json").getFile()));
+        FileInputStream streamA = new FileInputStream(Objects.requireNonNull(getClass().getClassLoader().getResource("testA.json")).getFile());
+        FileInputStream streamB = new FileInputStream(Objects.requireNonNull(getClass().getClassLoader().getResource("testB.json")).getFile());
 
         CompareResult compareResult = new JsonCompare(streamA, streamB).compare();
 
