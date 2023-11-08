@@ -13,8 +13,8 @@ public class CompareResult {
     private final List<String> matched;
     private final Map<String, Map<String, Object>> mismatched;
 
-    private final String MISMATCH_KEY = "key";
-    private final String MISMATCH_VALUE_IN_KEY = "valueIn%s";
+    private static final String MISMATCH_KEY = "key";
+    private static final String MISMATCH_VALUE_IN_KEY = "valueIn%s";
 
     public static final String MISSING_IN_VALUE = "[MISSING IN %s]";
 
