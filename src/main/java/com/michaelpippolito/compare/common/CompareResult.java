@@ -17,7 +17,6 @@ public class CompareResult {
     private final String MISMATCH_VALUE_IN_KEY = "valueIn%s";
 
     public static final String MISSING_IN_VALUE = "[MISSING IN %s]";
-    public static final String ARRAY_SIZE_MISMATCH = "[SIZE = %d]";
 
     public void combine(CompareResult toCombine) {
         this.matched.addAll(toCombine.getMatched());
